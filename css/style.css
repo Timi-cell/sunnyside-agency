@@ -127,8 +127,8 @@ body {
 
 /* --about section-- */
 
-.about .about--1__desktopImage,
-.about .about--2__desktopImage {
+.about .about--1 .images--1 .about--1__desktopImage,
+.about .about--2 .images--2 .about--2__desktopImage {
   display: none;
 }
 .about .about--1 {
@@ -138,8 +138,8 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-.about .about--1__mobileImage,
-.about .about--2__mobileImage {
+.about .about--1 .images--1 .about--1__mobileImage,
+.about .about--2 .images--2 .about--2__mobileImage {
   object-fit: cover;
   width: 100%;
 }
