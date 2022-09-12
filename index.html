@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
     <link
       rel="icon"
       type="image/png"
@@ -19,12 +18,7 @@
       href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap"
       rel="stylesheet"
     />
-    <script
-      src="https://kit.fontawesome.com/8725ddc164.js"
-      crossorigin="anonymous"
-    ></script>
     <title>Sunnyside Agency Landing Page</title>
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   </head>
   <body>
     <!-- top section -->
@@ -33,11 +27,19 @@
         <a href="#"><img src="./images/logo.svg" alt="logo" /></a>
         <img src="./images/icon-hamburger.svg" alt="hamburger" id="menu--bar" />
         <div class="links">
-          <ul class="row-flex-withSpaceBetween">
+          <ul class="row-flex-withSpaceBetween" id="links">
             <li><a href="#">About</a></li>
             <li><a href="#">Services</a></li>
             <li><a href="#">Projects</a></li>
             <li><a href="#" id="last">CONTACT</a></li>
+          </ul>
+        </div>
+        <div class="showLinks" id="showLinks">
+          <ul class="row-flex-withSpaceAround">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#" id="mobileLast">CONTACT</a></li>
           </ul>
         </div>
       </header>
@@ -279,5 +281,6 @@
         >. Coded by <a href="#">Timi</a>.
       </div>
     </section>
+    <script src="./js/script.js"></script>
   </body>
 </html>
