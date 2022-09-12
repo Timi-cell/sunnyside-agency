@@ -388,6 +388,50 @@ body {
     width: 30%;
   }
 }
+
+/* gallery section */
+/* for mobile devices */
+.desktop1,
+.desktop2,
+.desktop3,
+.desktop4 {
+  display: none;
+}
+.mobile1,
+.mobile2,
+.mobile3,
+.mobile4 {
+  object-fit: cover;
+  width: 100%;
+}
+
+.gallery {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+@media screen and (min-width: 1000px) {
+  /* for larger screens */
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+  }
+  .desktop1,
+  .desktop2,
+  .desktop3,
+  .desktop4 {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+  }
+  .mobile1,
+  .mobile2,
+  .mobile3,
+  .mobile4 {
+    display: none;
+  }
+}
 /* --end section-- */
 .attribution {
   font-size: 1.5rem;
