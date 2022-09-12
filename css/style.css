@@ -460,6 +460,12 @@ body {
   cursor: pointer;
   justify-content: center;
 }
+@media  screen and (max-width: 360px) {
+  .footer ul {
+
+  gap: 1.5rem;
+}
+}
 /* --end section-- */
 .attribution {
   font-size: 1.5rem;
