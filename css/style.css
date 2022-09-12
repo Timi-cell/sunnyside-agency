@@ -9,7 +9,6 @@ html {
   font-size: 62.5%;
   -webkit-tap-highlight-color: transparent;
   user-select: none;
-  scroll-behavior: smooth;
 }
 
 :root {
@@ -51,6 +50,9 @@ h4 {
   font-family: var(--headersFont);
   font-weight: 900;
 }
+ul {
+  list-style: none;
+}
 p {
   font-family: var(--bodyFont);
   font-weight: 600;
@@ -75,6 +77,10 @@ body {
 }
 .top--header .links {
   display: none;
+}
+
+.top .top--header .links ul {
+  gap: 3rem;
 }
 
 .top .top--header__text {
@@ -131,10 +137,6 @@ body {
     display: none;
   }
 
-  .top .top--header .links ul {
-    list-style: none;
-    gap: 3rem;
-  }
   .top .top--header .links ul a {
     color: var(--white);
   }
@@ -432,11 +434,37 @@ body {
     display: none;
   }
 }
+
+/* footer section */
+/* for mobile devices */
+.footer {
+  background-color: var(--darkModerateCyan);
+  text-align: center;
+  padding: 7rem var(--padding) 1rem var(--padding);
+}
+.footer path {
+  fill: var(--darkSaturatedCyan);
+}
+
+.footer a {
+  color: var(--darkSaturatedCyan);
+}
+.footer ul {
+  margin-top: 3rem;
+  justify-content: center;
+  gap: 10rem;
+}
+.footer .social-icons {
+  margin: 5rem 0;
+  gap: 2.5rem;
+  cursor: pointer;
+  justify-content: center;
+}
 /* --end section-- */
 .attribution {
   font-size: 1.5rem;
   text-align: center;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: var(--white);
 }
